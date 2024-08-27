@@ -1,0 +1,100 @@
+header {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* margin-bottom: 60px; */
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #828282;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 550px;
+      height: 100%;
+      list-style: none;
+      li {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        a {
+          text-decoration: none;
+          color: black;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: ease-in-out 500ms;
+          &:hover {
+            background-color: gold;
+          }
+        }
+        .active {
+          background-color: gold;
+          
+          
+        }
+      }
+    }
+  }
+}
+.bigMenu {
+    display: flex !important;
+    position: fixed ;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    z-index: 200;
+    background-color: var(--Secondary-color);
+    li {
+        width: 100%;
+        a {
+            color: white;
+        }
+    }
+}
+.fixingScroll {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  transition: 500ms ease-in-out all;
+  animation: smooth 0.8s ease-in-out;
+}
+@keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width:700px) {
+  header{
+    position: fixed !important;
+  }  
+}

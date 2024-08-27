@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --Primary-color: #828282;
+  --Secondary-color: #DB4444;
+  --Text-color: #7D8184;
+}
